@@ -1,0 +1,54 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+es:
+  micolet: "Micolet"
+  language: "Idioma"
+  nav_home: "Inicio"
+  nav_news: "Newsletter"
+  nav_about: "Acerca de nostros"
+  woman_fashion: "Moda Mujer"
+  man_fashion: "Moda Hombre"
+  child_fashion: "Moda Infantil"
+  preferences: "Preferencias"
+  subscribe: "!Suscribirme!"
+  subscribe_welcome: "!Bienvenid@! Proximanmente abriremos nuentra web en este pais."
+  subscribe_text: "Suscríbete para recibir nuestras novedades"
+  return_text: "Regresar"
+  info_email: "Pronto recibiras mas informacion en tu correo eletronico. "
+  info_email_text: "Pronto recibirás más información en tu correo electrónico."
+  hi_text: "Hola, "
+  thanks_text: "gracias por suscribirte."
+  home: "Micolet tiene actualmente presencia en 8 paises y no dejamos de buscar nuevos mercados en los que establecernos.
+         \n De cara a ir captando subscriptores antes de abrir la página en un nuevo país queremos disponer de una landing
+          page sencilla donde las personas interesadas en recibir nuestra newsletter puedan introducir su email y seleccionar
+          sus preferencias entre: Moda Mujer, Moda Hombre y Moda Infantil."
+

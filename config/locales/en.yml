@@ -30,4 +30,24 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  micolet: "Micolet"
+  language: "Language"
+  nav_home: "Home"
+  nav_news: "Newsletter"
+  nav_about: "About"
+  woman_fashion: "Woman Fashion"
+  man_fashion: "Man Fashion"
+  child_fashion: "Child Fashion"
+  preferences: "Preferences"
+  subscribe: "!Subscribe!"
+  subscribe_welcome: "!Welcome! soon we will open our website in this country."
+  subscribe_text: "Subscribe to receive our news"
+  return_text: "Return"
+  info_email: "Pronto recibiras mas informacion en tu correo eletronico. "
+  info_email_text: "Soon you will receive more information in your email."
+  hi_text: "Hi,"
+  thanks_text: "thanks for subscribing."
+  home: "Micolet currently has a presence in 8 countries and we do not stop looking for new markets in which to establish ourselves.
+         \n in order to attract subscribers before opening the page in a new country, we want to have a simple landing page where
+         people interested in receiving our newsletter can enter their email and select your preferences between: Women's Fashion,
+         Men's Fashion and Children's Fashion."

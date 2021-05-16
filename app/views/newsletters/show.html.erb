@@ -7,13 +7,13 @@
       <br>
       <div class="row text-justify">
         <strong class="text-secondary">
-          <p class="text-center">Hola, <label class="text-success"><%= @newsletter.email %></label> gracias por suscribirte. </p>
-          <p class="text-center">Pronto recibiras mas informacion en tu correo eletronico. </p>
+          <p class="text-center"><%= t('hi_text') %> <label class="text-success"><%= @newsletter.email %></label> <%= t('thanks_text') %> </p>
+          <p class="text-center"><%= t('info_email_text') %></p>
         </strong>
       </div>
       <div class="row justify-content-center">
         <div class="col-3 text-center">
-          <%= link_to 'Regresar', newsletters_path, class: 'text-success'%>
+          <%= link_to t('return_text'), newsletters_path, class: 'text-success'%>
         </div>
       </div>
     </div>

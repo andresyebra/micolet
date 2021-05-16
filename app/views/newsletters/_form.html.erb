@@ -20,30 +20,30 @@
         <br>
         <div class="row text-justify">
           <strong class="text-secondary">
-            <p class="text-center">!Bienvenid@! Proximanmente abriremos <br> nuentra web en este pais. </p>
-            <p class="text-center">Suscribite para recibir nuestra novedades </p>
+            <p class="text-center"><%= t('subscribe_welcome') %> </p>
+            <p class="text-center"><%= t('subscribe_text') %></p>
           </strong>
         </div>
           <div class="mb-3">
             <%= form.label :email, class: "form-label text-secondary" %>
             <%= form.email_field :email, class: "form-control" %>
           </div>
-          <label class="form-label text-secondary">Preferencias</label>
+          <label class="form-label text-secondary"><%= t('preferences') %></label>
           <div class="mb-3 form-check">
-            <%= form.label :woman, "Moda Mujer", class: "form-label text-secondary text-dark" %>
+            <%= form.label :woman, t('woman_fashion'), class: "form-label text-secondary text-dark" %>
             <%= form.check_box :woman, class: "form-check-input"%>
           </div>
           <div class="mb-3 form-check">
-            <%= form.label :man, "Moda Hombre", class: "form-label text-secondary text-dark" %>
+            <%= form.label :man, t('man_fashion'), class: "form-label text-secondary text-dark" %>
             <%= form.check_box :man, class: "form-check-input"%>
           </div>
           <div class="mb-3 form-check">
-            <%= form.label :child, "Moda Infantil", class: "form-label text-secondary text-dark" %>
+            <%= form.label :child, t('child_fashion'), class: "form-label text-secondary text-dark" %>
             <%= form.check_box :child, class: "form-check-input"%>
           </div>
           <div class="row justify-content-center">
             <div class="col-3 text-center">
-              <%= form.submit "!Suscrbirme!", class:"btn btn-success"%>
+              <%= form.submit t('subscribe'), class:"btn btn-success"%>
             </div>
           </div>
       </div>

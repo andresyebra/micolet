@@ -11,3 +11,5 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+require("packs/bootstrap.min")
+require("packs/jquery-3.2.1.slim.min")
