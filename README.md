@@ -1,24 +1,35 @@
-# README
+# micolet
+Micolet app was created to offer to the people interested in receiving our newsletter.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Features
+- Rails Version: 6.0.3
+- Ruby Version: 2.7.0
+- SQLite
 
-Things you may want to cover:
+# Structure
+- App
+    - controllers: Http actions
+        - application_controller.rb
+        - newsletters_controller.rb
+    - models: Database models.
+        - newsletter.rb
+    - views: Application views.
+        - layout
+            - application.html.erb
+        - newsletters
+          - index.html.erb
+          - new.html.erb
+          - show.html.erb
+- Config
+    - routes.rb: Contain http routes.
+    - database.yml: Configuration file for the database connection.
+    - application.yml: Configuration file for the app.
 
-* Ruby version
+# Setting up
+1. Run migration to SQLite in development environment:  
+   rails db:migrate RAILS_ENV=development
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3. Run Rails server executing the command:  
+   rails s -e development -p 3000
+   
+4. Enter to URL: http://localhost:3000/
