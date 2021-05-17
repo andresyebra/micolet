@@ -51,4 +51,18 @@ es:
          \n De cara a ir captando subscriptores antes de abrir la página en un nuevo país queremos disponer de una landing
           page sencilla donde las personas interesadas en recibir nuestra newsletter puedan introducir su email y seleccionar
           sus preferencias entre: Moda Mujer, Moda Hombre y Moda Infantil."
-
+  preferences_success: "Newsletter fue creado con éxito"
+  preferences_error: "Seleccione al menos una preferencia"
+  activerecord:
+    models:
+      newsletter: "Newsletter"
+    attributes:
+      newsletter:
+        email: "Email:"
+    errors:
+      models:
+        newsletter:
+          attributes:
+            email:
+              taken: "Este correo electrinico ya se encuentra registrado"
+              invalid: "Correo electrinico invalido"

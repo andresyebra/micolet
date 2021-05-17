@@ -1,12 +1,12 @@
 class NewslettersController < ApplicationController
   before_action :set_newsletter, only: %i[ show edit update destroy ]
 
-  # GET /newsletters or /newsletters.json
+  # GET /newsletters
   def index
     @newsletters = Newsletter.all
   end
 
-  # GET /newsletters/1 or /newsletters/1.json
+  # GET /newsletters/1
   def show
   end
 
@@ -19,22 +19,35 @@ class NewslettersController < ApplicationController
   def edit
   end
 
-  # POST /newsletters or /newsletters.json
+  # POST /newsletters
   def create
+    #Create newsletter
     @newsletter = Newsletter.new(newsletter_params)
-
     respond_to do |format|
-      if @newsletter.save
-        format.html { redirect_to @newsletter, notice: "Newsletter was successfully created." }
-        format.json { render :show, status: :created, location: @newsletter }
-      else
+      #Set the newsletter_params in params var
+      params = newsletter_params
+      #Valid if all preference are zero or false
+      if params[:woman] == "0" && params[:man] == "0" && params[:child] == "0"
+        #Add preferences_error message to return to view
+        @newsletter.errors.add(:preferences, t('preferences_error'))
+        #Render in html and json format the model errors
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @newsletter.errors, status: :unprocessable_entity }
+      else
+        if @newsletter.save
+          #Render in html and json format the model notice
+          format.html { redirect_to @newsletter, notice: t('preferences_success') }
+          format.json { render :show, status: :created, location: @newsletter }
+        else
+          #Render in html and json format the model errors
+          format.html { render :new, status: :unprocessable_entity }
+          format.json { render json: @newsletter.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
 
-  # PATCH/PUT /newsletters/1 or /newsletters/1.json
+  # PATCH/PUT /newsletters/1
   def update
     respond_to do |format|
       if @newsletter.update(newsletter_params)
@@ -47,7 +60,7 @@ class NewslettersController < ApplicationController
     end
   end
 
-  # DELETE /newsletters/1 or /newsletters/1.json
+  # DELETE /newsletters/1
   def destroy
     @newsletter.destroy
     respond_to do |format|

@@ -1,0 +1,8 @@
+test:
+  email_validation_api: "https://emailvalidation.abstractapi.com/v1/?api_key=c877f5a1e1c14ab8bc9232e2e463bdf1&email="
+
+development:
+  email_validation_api: "https://emailvalidation.abstractapi.com/v1/?api_key=c877f5a1e1c14ab8bc9232e2e463bdf1&email="
+
+production:
+  email_validation_api: "https://emailvalidation.abstractapi.com/v1/?api_key=c877f5a1e1c14ab8bc9232e2e463bdf1&email="

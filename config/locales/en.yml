@@ -51,3 +51,18 @@ en:
          \n in order to attract subscribers before opening the page in a new country, we want to have a simple landing page where
          people interested in receiving our newsletter can enter their email and select your preferences between: Women's Fashion,
          Men's Fashion and Children's Fashion."
+  preferences_success: "Newsletter was successfully created"
+  preferences_error: "Select at least one preference"
+  activerecord:
+    models:
+      newsletter: "Newsletter"
+    attributes:
+      newsletter:
+        email: "Email:"
+    errors:
+      models:
+        newsletter:
+          attributes:
+            email:
+              taken: "This email is already registered"
+              invalid: "Invalid email"
